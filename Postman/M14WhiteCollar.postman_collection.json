@@ -1,0 +1,414 @@
+{
+	"info": {
+		"_postman_id": "05066c70-adc4-40e8-9978-1bcb92e3c1da",
+		"name": "M14WhiteCollar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "01 Api-Crear Tienda Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Galeria Nueva",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Barcelona",
+							"type": "text"
+						},
+						{
+							"key": "max_capacity",
+							"value": "21",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.1.12/m1401/public/index.php/api/shops",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"12"
+					],
+					"path": [
+						"m1401",
+						"public",
+						"index.php",
+						"api",
+						"shops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "02 Api-Listar Tiendas Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.12/m1401/public/index.php/api/shops/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"12"
+					],
+					"path": [
+						"m1401",
+						"public",
+						"index.php",
+						"api",
+						"shops",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "03 Api-Añadir Cuadro Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "author",
+							"value": "Velazquezxxx",
+							"type": "text"
+						},
+						{
+							"key": "picture_name",
+							"value": "La rendicion de Breda",
+							"type": "text"
+						},
+						{
+							"key": "shop_id",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "entry_date",
+							"value": "2021-01-01",
+							"type": "text"
+						},
+						{
+							"key": "url",
+							"value": "./img/c014.jpg",
+							"type": "text"
+						},
+						{
+							"key": "comment",
+							"value": "lorem ipsum",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.1.12/m1401/public/index.php/api/shops/5/pictures",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"12"
+					],
+					"path": [
+						"m1401",
+						"public",
+						"index.php",
+						"api",
+						"shops",
+						"5",
+						"pictures"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "04 Api-Listar Cuadros X Tienda Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.12/m1401/public/index.php/api/shops/3/pictures/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"12"
+					],
+					"path": [
+						"m1401",
+						"public",
+						"index.php",
+						"api",
+						"shops",
+						"3",
+						"pictures",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "05 Api-Quemar Tienda Get delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.12/m1401/public/index.php/api/shops/1/pictures",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"12"
+					],
+					"path": [
+						"m1401",
+						"public",
+						"index.php",
+						"api",
+						"shops",
+						"1",
+						"pictures"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "06 Api-Listar Todos Cuadros Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.12/m1401/public/index.php/api/show/picture/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"12"
+					],
+					"path": [
+						"m1401",
+						"public",
+						"index.php",
+						"api",
+						"show",
+						"picture",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "07 Api-Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Jose",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "jose@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.1.12/m1401/public/index.php/api/register",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"12"
+					],
+					"path": [
+						"m1401",
+						"public",
+						"index.php",
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "08 Api-Login",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "jose@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.1.12/m1401/public/index.php/api/login",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"12"
+					],
+					"path": [
+						"m1401",
+						"public",
+						"index.php",
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "08 Api-Logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiZDIxZmI1MjIwMDgxYmViZDhmOTliNWVkNDg3NDQ5ZmVmMzNkNzMyYjc0NDVjZWEyODVmNTE3YTBiNTE2YmY1OWZkYTBhOTFjYzVhNmExNmQiLCJpYXQiOjE2MzUyNTk2NDQsIm5iZiI6MTYzNTI1OTY0NCwiZXhwIjoxNjY2Nzk1NjQ0LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.Do581vJn8fmtLsjYCWAIhrj6MAjD3ztSN7enijfabLIrhUaZKg-XXGDwkp-EmPU3ObwSpjBvAE2_tTMr3QipeGSJlNfmj4hblcrN6rMp-Y9FyIp3FIjhWDXGK_ehm9ECJT6FZoX_KcR7Xaee7XrXBBzWLDCtEI3fG20UpNmFusLRFbqko1o3Ur-ADupv1C9r4gYxKRHkJA-xG4E_YIvBZsxVArq65qB2QncY8hnDuLbi_tyv3DFYF5Ie6GxUiNo15qmlY_cXvdarm7YhiPgN27GqyfALbfHbEeaYhppC0f2q3vyRHIySAlQxLj_r6yFZwgnBdrj2AsnPQVw25gcaRE8lwfs3iVYY8O0Yk2wjOYBML-85RAEv50S9YEBCWDkBZuB-jLzHWfendM-Jz23TAs7pKE9KQWRzocmXxtTJIoKAX_tzu30-85WMVr9NcX9Kr9pfzFZ2RXCgZcqmvOskKmfgwMMPSZVAYg_j8pb19hUNgK19y4rGiQX1-IKt7i8Fc3CwrRG-uPU8-WLw6KTSfeakWgXAUNi1gfDc1Av148XvfOmUo53kmPh74SWv8FfQ5L7aXoeYBczWbBuMh_-p9rsLkVXQhu53UDgyVsLLaucB7uljBFGuzV2xf6x1GwIWjjOMS5JfqVmu6bUA8OQd-wxOKvwIujVGf8m0jAWEojI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://192.168.1.12/m1401/public/index.php/api/logout",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"12"
+					],
+					"path": [
+						"m1401",
+						"public",
+						"index.php",
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "08 Api-PruebasM",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiOTA0ZTRiN2ZjOTQ4YzdhM2I5MmZmNjYzZWExZGE4NWI1N2MzN2Y5M2IxYWRiNDVjNWU2MDRmODgzNWFlOTY3ZjNhODk0NjE2Y2VlNjU1YjUiLCJpYXQiOjE2MzUxODM5NTYsIm5iZiI6MTYzNTE4Mzk1NiwiZXhwIjoxNjY2NzE5OTU2LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.CgE8cJSYWtBerOAQTkq9AAZHC7fMY-2LNfQh5o0sAmw_gveukjSlUnjH4eYv9wN0LgoB5Cpj2Sroz8DC31dsY_uMdnimImmxRAcg5U4seVoJaAVLl4dvCbE-SiLWFMsNJdf5TfEq77J-oL4717sJGRyKl-I1asIzAkqwsENNWCxmPyXzfcRvPelGeE9u14Cj-3n2qIZ8IqsnR8mfbwk_c1izshKlPcrjJ3WLdGaW__FuXXGZRUYeNzEn7sQrZeqdoE6Ufk_4Th1vmqnWcARb08_N9xaj0SyIcA26amLAkYiBXquA3HmuHM5d0ZEMNYN9b79XFWQBcySs7l2-Ci5xoap-9m-DJokRdNK0xUR_4Jwt34NH__su4PmXx5wAIrijIMHc3B2YUX-sRMwIMu4g7cKQlOy3-ZwoWn1GK0fDK3p5l8KfsFHcK_et27DrvQi88EyEMjaSKeTz86zruvRbwcFgZs277UBvJAyrb0c0TkS4Rjymomttex_PjEf-YYQkmCWi2EKxaH7e9VfFvvqFdocdzLUqVEYSK1VQe3pEnnE444QtcBK1CVS3_1J5_2JKhYrokqpWuV93Hnd9y7L6vrrbMUrnt5MGC92_b5ARRBOPGJ6QN3YH3fsonDRrSQkidmO-WC_3TCuF7JEPNNbt1AYvLxo9VaEaj3X27w10RV8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.12/m1401/public/index.php/api/pruebas",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"12"
+					],
+					"path": [
+						"m1401",
+						"public",
+						"index.php",
+						"api",
+						"pruebas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Web-Home",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.12/m1401/public/index.php",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"12"
+					],
+					"path": [
+						"m1401",
+						"public",
+						"index.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
