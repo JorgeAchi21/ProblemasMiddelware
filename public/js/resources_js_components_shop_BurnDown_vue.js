@@ -195,7 +195,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -205,11 +205,11 @@ var render = function() {
         "form",
         {
           on: {
-            submit: function($event) {
+            submit: function ($event) {
               $event.preventDefault()
               return _vm.BurnDown()
-            }
-          }
+            },
+          },
         },
         [
           _c("div", { staticClass: "form-group" }, [
@@ -223,27 +223,27 @@ var render = function() {
                     name: "model",
                     rawName: "v-model",
                     value: _vm.selected,
-                    expression: "selected"
-                  }
+                    expression: "selected",
+                  },
                 ],
                 staticClass: "form-control",
                 on: {
-                  change: function($event) {
+                  change: function ($event) {
                     var $$selectedVal = Array.prototype.filter
-                      .call($event.target.options, function(o) {
+                      .call($event.target.options, function (o) {
                         return o.selected
                       })
-                      .map(function(o) {
+                      .map(function (o) {
                         var val = "_value" in o ? o._value : o.value
                         return val
                       })
                     _vm.selected = $event.target.multiple
                       ? $$selectedVal
                       : $$selectedVal[0]
-                  }
-                }
+                  },
+                },
               },
-              _vm._l(_vm.shops, function(shop) {
+              _vm._l(_vm.shops, function (shop) {
                 return _c("option", { domProps: { value: shop.id } }, [
                   _vm._v(
                     "\n                        " +
@@ -251,38 +251,38 @@ var render = function() {
                       " " +
                       _vm._s(shop.name) +
                       " \n                    "
-                  )
+                  ),
                 ])
               }),
               0
-            )
+            ),
           ]),
           _vm._v(" "),
           _c("div", [
-            _c("span", [_vm._v("Seleccionado: " + _vm._s(_vm.selected) + " ")])
+            _c("span", [_vm._v("Seleccionado: " + _vm._s(_vm.selected) + " ")]),
           ]),
           _vm._v(" "),
           _c(
             "button",
             { staticClass: "btn btn-primary", attrs: { type: "submit" } },
             [_vm._v("Burn Down...")]
-          )
+          ),
         ]
-      )
-    ])
+      ),
+    ]),
   ])
 }
 var staticRenderFns = [
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("label", { attrs: { for: "galleryName" } }, [
       _vm._v("Select a Gallery to "),
       _c("strong", [_vm._v("burn down")]),
-      _vm._v(":  *(list select)")
+      _vm._v(":  *(list select)"),
     ])
-  }
+  },
 ]
 render._withStripped = true
 

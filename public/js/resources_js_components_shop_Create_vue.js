@@ -150,7 +150,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -161,11 +161,11 @@ var render = function() {
       "form",
       {
         on: {
-          submit: function($event) {
+          submit: function ($event) {
             $event.preventDefault()
             return _vm.addShop()
-          }
-        }
+          },
+        },
       },
       [
         _c("div", { staticClass: "form-group" }, [
@@ -177,21 +177,21 @@ var render = function() {
                 name: "model",
                 rawName: "v-model",
                 value: _vm.shop.name,
-                expression: "shop.name"
-              }
+                expression: "shop.name",
+              },
             ],
             staticClass: "form-control",
             attrs: { type: "text", id: "name" },
             domProps: { value: _vm.shop.name },
             on: {
-              input: function($event) {
+              input: function ($event) {
                 if ($event.target.composing) {
                   return
                 }
                 _vm.$set(_vm.shop, "name", $event.target.value)
-              }
-            }
-          })
+              },
+            },
+          }),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "form-group" }, [
@@ -203,21 +203,21 @@ var render = function() {
                 name: "model",
                 rawName: "v-model",
                 value: _vm.shop.address,
-                expression: "shop.address"
-              }
+                expression: "shop.address",
+              },
             ],
             staticClass: "form-control",
             attrs: { type: "text", id: "description" },
             domProps: { value: _vm.shop.address },
             on: {
-              input: function($event) {
+              input: function ($event) {
                 if ($event.target.composing) {
                   return
                 }
                 _vm.$set(_vm.shop, "address", $event.target.value)
-              }
-            }
-          })
+              },
+            },
+          }),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "form-group" }, [
@@ -229,21 +229,21 @@ var render = function() {
                 name: "model",
                 rawName: "v-model",
                 value: _vm.shop.max_capacity,
-                expression: "shop.max_capacity"
-              }
+                expression: "shop.max_capacity",
+              },
             ],
             staticClass: "form-control",
             attrs: { type: "text", id: "price" },
             domProps: { value: _vm.shop.max_capacity },
             on: {
-              input: function($event) {
+              input: function ($event) {
                 if ($event.target.composing) {
                   return
                 }
                 _vm.$set(_vm.shop, "max_capacity", $event.target.value)
-              }
-            }
-          })
+              },
+            },
+          }),
         ]),
         _vm._v(" "),
         _c(
@@ -253,9 +253,9 @@ var render = function() {
         ),
         _vm._v(" "),
         _c("br"),
-        _vm._v(_vm._s(_vm.product) + "\n    ")
+        _vm._v(_vm._s(_vm.product) + "\n    "),
       ]
-    )
+    ),
   ])
 }
 var staticRenderFns = []

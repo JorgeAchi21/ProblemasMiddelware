@@ -56,9 +56,9 @@ Route::post('register', [PassportController::class, 'register']);
 //login
 Route::post('login', [PassportController::class, 'login']);
 
-Route::post('logout', [PassportController::class, 'logout']);
 //Rutas aseguradas por el middleware
-Route::middleware('auth:api') -> group(function() {
+Route::middleware('auth:api')->group(function() {
     Route::post('pruebas', [PassportController::class, 'pruebasM']);
+    Route::post('logout', [PassportController::class, 'logout']);
 });
 

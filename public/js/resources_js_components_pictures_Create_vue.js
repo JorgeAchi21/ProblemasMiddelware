@@ -219,7 +219,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -230,11 +230,11 @@ var render = function() {
       "form",
       {
         on: {
-          submit: function($event) {
+          submit: function ($event) {
             $event.preventDefault()
             return _vm.addShop()
-          }
-        }
+          },
+        },
       },
       [
         _c("div", { staticClass: "form-group" }, [
@@ -246,26 +246,26 @@ var render = function() {
                 name: "model",
                 rawName: "v-model",
                 value: _vm.picture.author,
-                expression: "picture.author"
-              }
+                expression: "picture.author",
+              },
             ],
             staticClass: "form-control",
             attrs: { type: "text", id: "author" },
             domProps: { value: _vm.picture.author },
             on: {
-              input: function($event) {
+              input: function ($event) {
                 if ($event.target.composing) {
                   return
                 }
                 _vm.$set(_vm.picture, "author", $event.target.value)
-              }
-            }
-          })
+              },
+            },
+          }),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "form-group" }, [
           _c("label", { attrs: { for: "picture_name" } }, [
-            _vm._v("Picture name:")
+            _vm._v("Picture name:"),
           ]),
           _vm._v(" "),
           _c("input", {
@@ -274,21 +274,21 @@ var render = function() {
                 name: "model",
                 rawName: "v-model",
                 value: _vm.picture.picture_name,
-                expression: "picture.picture_name"
-              }
+                expression: "picture.picture_name",
+              },
             ],
             staticClass: "form-control",
             attrs: { type: "text", id: "picture_name" },
             domProps: { value: _vm.picture.picture_name },
             on: {
-              input: function($event) {
+              input: function ($event) {
                 if ($event.target.composing) {
                   return
                 }
                 _vm.$set(_vm.picture, "picture_name", $event.target.value)
-              }
-            }
-          })
+              },
+            },
+          }),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "form-group" }, [
@@ -300,21 +300,21 @@ var render = function() {
                 name: "model",
                 rawName: "v-model",
                 value: _vm.picture.shop_id,
-                expression: "picture.shop_id"
-              }
+                expression: "picture.shop_id",
+              },
             ],
             staticClass: "form-control",
             attrs: { type: "number", id: "shop_id" },
             domProps: { value: _vm.picture.shop_id },
             on: {
-              input: function($event) {
+              input: function ($event) {
                 if ($event.target.composing) {
                   return
                 }
                 _vm.$set(_vm.picture, "shop_id", $event.target.value)
-              }
-            }
-          })
+              },
+            },
+          }),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "form-group" }, [
@@ -326,26 +326,26 @@ var render = function() {
                 name: "model",
                 rawName: "v-model",
                 value: _vm.picture.price,
-                expression: "picture.price"
-              }
+                expression: "picture.price",
+              },
             ],
             staticClass: "form-control",
             attrs: { type: "number", id: "price" },
             domProps: { value: _vm.picture.price },
             on: {
-              input: function($event) {
+              input: function ($event) {
                 if ($event.target.composing) {
                   return
                 }
                 _vm.$set(_vm.picture, "price", $event.target.value)
-              }
-            }
-          })
+              },
+            },
+          }),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "form-group" }, [
           _c("label", { attrs: { for: "entry_date" } }, [
-            _vm._v("Entry date:")
+            _vm._v("Entry date:"),
           ]),
           _vm._v(" "),
           _c("input", {
@@ -354,21 +354,21 @@ var render = function() {
                 name: "model",
                 rawName: "v-model",
                 value: _vm.picture.entry_date,
-                expression: "picture.entry_date"
-              }
+                expression: "picture.entry_date",
+              },
             ],
             staticClass: "form-control",
             attrs: { type: "date", id: "entry_date" },
             domProps: { value: _vm.picture.entry_date },
             on: {
-              input: function($event) {
+              input: function ($event) {
                 if ($event.target.composing) {
                   return
                 }
                 _vm.$set(_vm.picture, "entry_date", $event.target.value)
-              }
-            }
-          })
+              },
+            },
+          }),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "form-group" }, [
@@ -382,27 +382,27 @@ var render = function() {
                   name: "model",
                   rawName: "v-model",
                   value: _vm.selected,
-                  expression: "selected"
-                }
+                  expression: "selected",
+                },
               ],
               staticClass: "form-control",
               on: {
-                change: function($event) {
+                change: function ($event) {
                   var $$selectedVal = Array.prototype.filter
-                    .call($event.target.options, function(o) {
+                    .call($event.target.options, function (o) {
                       return o.selected
                     })
-                    .map(function(o) {
+                    .map(function (o) {
                       var val = "_value" in o ? o._value : o.value
                       return val
                     })
                   _vm.selected = $event.target.multiple
                     ? $$selectedVal
                     : $$selectedVal[0]
-                }
-              }
+                },
+              },
             },
-            _vm._l(_vm.pictureIn, function(picture) {
+            _vm._l(_vm.pictureIn, function (picture) {
               return _c("option", { domProps: { value: picture.url } }, [
                 _vm._v(
                   "\n                    " +
@@ -410,11 +410,11 @@ var render = function() {
                     " - " +
                     _vm._s(picture.nombre_cuadro) +
                     " \n                "
-                )
+                ),
               ])
             }),
             0
-          )
+          ),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "form-group" }, [
@@ -426,21 +426,21 @@ var render = function() {
                 name: "model",
                 rawName: "v-model",
                 value: _vm.picture.comment,
-                expression: "picture.comment"
-              }
+                expression: "picture.comment",
+              },
             ],
             staticClass: "form-control",
             attrs: { type: "text", id: "url" },
             domProps: { value: _vm.picture.comment },
             on: {
-              input: function($event) {
+              input: function ($event) {
                 if ($event.target.composing) {
                   return
                 }
                 _vm.$set(_vm.picture, "comment", $event.target.value)
-              }
-            }
-          })
+              },
+            },
+          }),
         ]),
         _vm._v(" "),
         _c(
@@ -450,22 +450,22 @@ var render = function() {
         ),
         _vm._v(" "),
         _c("br"),
-        _vm._v(_vm._s(_vm.picture) + "\n    ")
+        _vm._v(_vm._s(_vm.picture) + "\n    "),
       ]
-    )
+    ),
   ])
 }
 var staticRenderFns = [
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("label", { attrs: { for: "url" } }, [
       _vm._v("Select a Gallery to "),
       _c("strong", [_vm._v("Image url")]),
-      _vm._v(":  *(list select)")
+      _vm._v(":  *(list select)"),
     ])
-  }
+  },
 ]
 render._withStripped = true
 

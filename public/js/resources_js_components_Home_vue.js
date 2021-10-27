@@ -64,14 +64,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _vm._m(0)
 }
 var staticRenderFns = [
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -79,7 +79,7 @@ var staticRenderFns = [
       _c("div", { staticClass: "card bg-dark text-white" }, [
         _c("img", {
           staticClass: "card-img",
-          attrs: { src: "img/LogoApp.jpg", alt: "Card image" }
+          attrs: { src: "img/LogoApp.jpg", alt: "Card image" },
         }),
         _vm._v(" "),
         _c("div", { staticClass: "card-img-overlay" }, [
@@ -88,32 +88,32 @@ var staticRenderFns = [
               "span",
               { staticStyle: { "background-color": "rgba(71, 62, 62, 0.7)" } },
               [_vm._v("White Collar Shop")]
-            )
+            ),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "card-text h3" }, [
             _c(
               "span",
               {
-                staticStyle: { "background-color": "rgb(136, 120, 120, 0.7)" }
+                staticStyle: { "background-color": "rgb(136, 120, 120, 0.7)" },
               },
               [_vm._v(' We have the best "necklaces" for our clients...')]
-            )
+            ),
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "card-text h4" }, [
             _c(
               "span",
               {
-                staticStyle: { "background-color": "rgb(136, 120, 120, 0.7)" }
+                staticStyle: { "background-color": "rgb(136, 120, 120, 0.7)" },
               },
               [_vm._v(" Buy one ;-)")]
-            )
-          ])
-        ])
-      ])
+            ),
+          ]),
+        ]),
+      ]),
     ])
-  }
+  },
 ]
 render._withStripped = true
 

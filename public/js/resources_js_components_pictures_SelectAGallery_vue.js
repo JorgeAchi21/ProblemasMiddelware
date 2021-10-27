@@ -188,7 +188,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -203,22 +203,22 @@ var render = function() {
         _vm._v(" "),
         _c(
           "tbody",
-          _vm._l(_vm.shops, function(shop) {
+          _vm._l(_vm.shops, function (shop) {
             return _c("tr", { key: shop.id }, [
               _c("td", { staticClass: "text-white bg-secondary" }, [
-                _vm._v("\n              " + _vm._s(shop.id) + "\n            ")
+                _vm._v("\n              " + _vm._s(shop.id) + "\n            "),
               ]),
               _vm._v(" "),
               _c("td", [
                 _vm._v(
                   "\n              " + _vm._s(shop.name) + "\n            "
-                )
+                ),
               ]),
               _vm._v(" "),
               _c("td", [
                 _vm._v(
                   "\n              " + _vm._s(shop.address) + "\n            "
-                )
+                ),
               ]),
               _vm._v(" "),
               _c(
@@ -228,32 +228,32 @@ var render = function() {
                     "router-link",
                     {
                       staticClass: "btn btn-success",
-                      attrs: { to: "/PaintingByGallery/" + shop.id }
+                      attrs: { to: "/PaintingByGallery/" + shop.id },
                     },
                     [_vm._v("Painting by Gallery")]
-                  )
+                  ),
                 ],
                 1
-              )
+              ),
             ])
           }),
           0
-        )
-      ])
-    ])
+        ),
+      ]),
+    ]),
   ])
 }
 var staticRenderFns = [
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("p", { staticClass: "text-center h3 text-primary" }, [
       _c("span", { staticClass: "font-weight-bold" }, [_vm._v("Select ")]),
-      _vm._v(" a gallery to show pictures")
+      _vm._v(" a gallery to show pictures"),
     ])
   },
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -265,10 +265,10 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("th", { attrs: { scope: "col" } }, [_vm._v("Address:")]),
         _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Detail:")])
-      ])
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Detail:")]),
+      ]),
     ])
-  }
+  },
 ]
 render._withStripped = true
 

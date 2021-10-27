@@ -213,7 +213,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -226,14 +226,14 @@ var render = function() {
         _vm._v(" "),
         _c(
           "tbody",
-          _vm._l(_vm.shops, function(shop) {
+          _vm._l(_vm.shops, function (shop) {
             return _c("tr", { key: shop.id }, [
               _c("td", { staticClass: "text-white bg-secondary" }, [
                 _vm._v(
                   "\n                            " +
                     _vm._s(shop.id) +
                     "\n                        "
-                )
+                ),
               ]),
               _vm._v(" "),
               _c("td", [
@@ -241,7 +241,7 @@ var render = function() {
                   "\n                            " +
                     _vm._s(shop.name) +
                     "\n                        "
-                )
+                ),
               ]),
               _vm._v(" "),
               _c("td", [
@@ -249,7 +249,7 @@ var render = function() {
                   "\n                            " +
                     _vm._s(shop.address) +
                     "\n                        "
-                )
+                ),
               ]),
               _vm._v(" "),
               _c("td", [
@@ -257,45 +257,45 @@ var render = function() {
                   "\n                            " +
                     _vm._s(shop.max_capacity) +
                     "\n                        "
-                )
+                ),
               ]),
               _vm._v(" "),
               _c("td", [
                 _vm._v(
                   "\n                            Show\n                        "
-                )
+                ),
               ]),
               _vm._v(" "),
               _c("td", [
                 _vm._v(
                   "\n                            Edit\n                        "
-                )
+                ),
               ]),
               _vm._v(" "),
               _c("td", [
                 _vm._v(
                   "\n                            Delete\n                            "
-                )
-              ])
+                ),
+              ]),
             ])
           }),
           0
-        )
-      ])
-    ])
+        ),
+      ]),
+    ]),
   ])
 }
 var staticRenderFns = [
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("p", { staticClass: "text-center h3 text-primary" }, [
       _c("span", { staticClass: "font-weight-bold" }, [_vm._v("Gallery ")]),
-      _vm._v(" list:")
+      _vm._v(" list:"),
     ])
   },
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -313,10 +313,10 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("th", { attrs: { scope: "col" } }, [_vm._v("Edit:")]),
         _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Delete:")])
-      ])
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Delete:")]),
+      ]),
     ])
-  }
+  },
 ]
 render._withStripped = true
 

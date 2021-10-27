@@ -175,7 +175,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -191,11 +191,11 @@ var render = function() {
                 "form",
                 {
                   on: {
-                    submit: function($event) {
+                    submit: function ($event) {
                       $event.preventDefault()
                       return _vm.register()
-                    }
-                  }
+                    },
+                  },
                 },
                 [
                   _c("h1", [_vm._v("Register:")]),
@@ -204,7 +204,7 @@ var render = function() {
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
                     _c("label", { attrs: { for: "name" } }, [
-                      _vm._v("User name:")
+                      _vm._v("User name:"),
                     ]),
                     _vm._v(" "),
                     _c("input", {
@@ -213,26 +213,26 @@ var render = function() {
                           name: "model",
                           rawName: "v-model",
                           value: _vm.usuario,
-                          expression: "usuario"
-                        }
+                          expression: "usuario",
+                        },
                       ],
                       staticClass: "form-control",
                       attrs: { type: "name" },
                       domProps: { value: _vm.usuario },
                       on: {
-                        input: function($event) {
+                        input: function ($event) {
                           if ($event.target.composing) {
                             return
                           }
                           _vm.usuario = $event.target.value
-                        }
-                      }
-                    })
+                        },
+                      },
+                    }),
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
                     _c("label", { attrs: { for: "username" } }, [
-                      _vm._v("Email:")
+                      _vm._v("Email:"),
                     ]),
                     _vm._v(" "),
                     _c("input", {
@@ -241,26 +241,26 @@ var render = function() {
                           name: "model",
                           rawName: "v-model",
                           value: _vm.email,
-                          expression: "email"
-                        }
+                          expression: "email",
+                        },
                       ],
                       staticClass: "form-control",
                       attrs: { type: "email" },
                       domProps: { value: _vm.email },
                       on: {
-                        input: function($event) {
+                        input: function ($event) {
                           if ($event.target.composing) {
                             return
                           }
                           _vm.email = $event.target.value
-                        }
-                      }
-                    })
+                        },
+                      },
+                    }),
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
                     _c("label", { attrs: { for: "username" } }, [
-                      _vm._v("Password:")
+                      _vm._v("Password:"),
                     ]),
                     _vm._v(" "),
                     _c("input", {
@@ -269,47 +269,47 @@ var render = function() {
                           name: "model",
                           rawName: "v-model",
                           value: _vm.password,
-                          expression: "password"
-                        }
+                          expression: "password",
+                        },
                       ],
                       staticClass: "form-control",
                       attrs: { type: "password" },
                       domProps: { value: _vm.password },
                       on: {
-                        input: function($event) {
+                        input: function ($event) {
                           if ($event.target.composing) {
                             return
                           }
                           _vm.password = $event.target.value
-                        }
-                      }
-                    })
+                        },
+                      },
+                    }),
                   ]),
                   _vm._v(" "),
                   _c("hr", { staticClass: "my-4" }),
                   _vm._v(" "),
-                  _vm._m(0)
+                  _vm._m(0),
                 ]
-              )
-            ])
+              ),
+            ]),
           ]
-        )
-      ])
-    ])
+        ),
+      ]),
+    ]),
   ])
 }
 var staticRenderFns = [
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "form-group", attrs: { id: "lower" } }, [
       _c("input", {
         staticClass: "mt-2 btn btn-primary",
-        attrs: { type: "submit", value: "Submit" }
-      })
+        attrs: { type: "submit", value: "Submit" },
+      }),
     ])
-  }
+  },
 ]
 render._withStripped = true
 

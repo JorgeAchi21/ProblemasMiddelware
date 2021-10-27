@@ -187,7 +187,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -195,7 +195,7 @@ var render = function() {
     _c("h1", [
       _vm._v(
         "Paining by gallery, Gallery Number: " + _vm._s(_vm.$route.params.id)
-      )
+      ),
     ]),
     _vm._v(" "),
     _c("section", { staticClass: "jumbotron text-center" }, [
@@ -204,12 +204,12 @@ var render = function() {
         _vm._v(" "),
         _c("p"),
         _c("h6", [
-          _vm._v("Total picture number: " + _vm._s(_vm.paintings.length))
+          _vm._v("Total picture number: " + _vm._s(_vm.paintings.length)),
         ]),
         _c("p"),
         _vm._v(" "),
-        _c("p")
-      ])
+        _c("p"),
+      ]),
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "album py-5 bg-light" }, [
@@ -217,62 +217,62 @@ var render = function() {
         _c(
           "div",
           { staticClass: "row" },
-          _vm._l(_vm.paintings, function(painting) {
+          _vm._l(_vm.paintings, function (painting) {
             return _c("div", { key: painting.id, staticClass: "col-md-4" }, [
               _c("div", { staticClass: "card mb-4 box-shadow" }, [
                 _c("img", {
                   staticClass: "card-img-top cuaImg rounded mx-auto",
-                  attrs: { src: "../" + painting.url, alt: painting.url }
+                  attrs: { src: "../" + painting.url, alt: painting.url },
                 }),
                 _vm._v(" "),
                 _c("div", { staticClass: "card-body" }, [
                   _c("p", { staticClass: "h6" }, [_vm._v("Title:")]),
                   _vm._v(" "),
                   _c("p", { staticClass: "h5" }, [
-                    _c("strong", [_vm._v(_vm._s(painting.picture_name))])
+                    _c("strong", [_vm._v(_vm._s(painting.picture_name))]),
                   ]),
                   _vm._v(" "),
                   _c("p", { staticClass: "h6" }, [_vm._v("Author:")]),
                   _vm._v(" "),
                   _c("p", { staticClass: "h5" }, [
-                    _c("strong", [_vm._v(_vm._s(painting.author))])
+                    _c("strong", [_vm._v(_vm._s(painting.author))]),
                   ]),
                   _vm._v(" "),
                   _c("p", { staticClass: "h6 card-text" }, [
-                    _vm._v(_vm._s(painting.comment))
+                    _vm._v(_vm._s(painting.comment)),
                   ]),
                   _vm._v(" "),
                   _c("p", { staticClass: "small" }, [
-                    _vm._v("Price: " + _vm._s(painting.price))
+                    _vm._v("Price: " + _vm._s(painting.price)),
                   ]),
                   _vm._v(" "),
                   _c("p", { staticClass: "small" }, [
-                    _vm._v("Entry date: " + _vm._s(painting.entry_date))
+                    _vm._v("Entry date: " + _vm._s(painting.entry_date)),
                   ]),
                   _vm._v(" "),
-                  _vm._m(0, true)
+                  _vm._m(0, true),
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "card-footer" }, [
                   _c("small", { staticClass: "text-muted small" }, [
-                    _vm._v("id: " + _vm._s(painting.id))
+                    _vm._v("id: " + _vm._s(painting.id)),
                   ]),
                   _vm._v(" "),
                   _c("small", { staticClass: "text-muted small" }, [
-                    _vm._v("Gallery: " + _vm._s(painting.shop_id))
-                  ])
-                ])
-              ])
+                    _vm._v("Gallery: " + _vm._s(painting.shop_id)),
+                  ]),
+                ]),
+              ]),
             ])
           }),
           0
-        )
-      ])
-    ])
+        ),
+      ]),
+    ]),
   ])
 }
 var staticRenderFns = [
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -281,7 +281,7 @@ var staticRenderFns = [
       { staticClass: "d-flex justify-content-between align-items-center" },
       [_c("div", { staticClass: "btn-group" })]
     )
-  }
+  },
 ]
 render._withStripped = true
 

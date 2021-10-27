@@ -64,14 +64,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _vm._m(0)
 }
 var staticRenderFns = [
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -90,35 +90,35 @@ var staticRenderFns = [
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
                     _c("label", { attrs: { for: "name" } }, [
-                      _vm._v("User name:")
+                      _vm._v("User name:"),
                     ]),
                     _vm._v(" "),
                     _c("input", {
                       staticClass: "form-control",
-                      attrs: { type: "name" }
-                    })
+                      attrs: { type: "name" },
+                    }),
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
                     _c("label", { attrs: { for: "username" } }, [
-                      _vm._v("Email:")
+                      _vm._v("Email:"),
                     ]),
                     _vm._v(" "),
                     _c("input", {
                       staticClass: "form-control",
-                      attrs: { type: "email" }
-                    })
+                      attrs: { type: "email" },
+                    }),
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
                     _c("label", { attrs: { for: "username" } }, [
-                      _vm._v("Password:")
+                      _vm._v("Password:"),
                     ]),
                     _vm._v(" "),
                     _c("input", {
                       staticClass: "form-control",
-                      attrs: { type: "password" }
-                    })
+                      attrs: { type: "password" },
+                    }),
                   ]),
                   _vm._v(" "),
                   _c("hr", { staticClass: "my-4" }),
@@ -129,18 +129,18 @@ var staticRenderFns = [
                     [
                       _c("input", {
                         staticClass: "mt-2 btn btn-primary",
-                        attrs: { type: "submit", value: "Submit" }
-                      })
+                        attrs: { type: "submit", value: "Submit" },
+                      }),
                     ]
-                  )
-                ])
-              ])
+                  ),
+                ]),
+              ]),
             ]
-          )
-        ])
-      ])
+          ),
+        ]),
+      ]),
     ])
-  }
+  },
 ]
 render._withStripped = true
 
